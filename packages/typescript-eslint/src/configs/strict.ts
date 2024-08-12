@@ -11,7 +11,7 @@ import baseConfig from './base';
 import eslintRecommendedConfig from './eslint-recommended';
 
 /**
- * Contains all of `recommended`, as well as additional strict rules that can also catch bugs.
+ * Contains all of `recommended` and additional strict rules that can also catch bugs.
  * @see {@link https://typescript-eslint.io/users/configs#strict}
  */
 export default (

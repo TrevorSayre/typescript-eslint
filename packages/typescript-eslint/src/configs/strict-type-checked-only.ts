@@ -11,7 +11,7 @@ import baseConfig from './base';
 import eslintRecommendedConfig from './eslint-recommended';
 
 /**
- * A version of `strict` that only contains type-checked rules and disables of any corresponding core ESLint rules.
+ * A version of `strict` that only contains type-checked rules and disables any corresponding core ESLint rules.
  * @see {@link https://typescript-eslint.io/users/configs#strict-type-checked-only}
  */
 export default (

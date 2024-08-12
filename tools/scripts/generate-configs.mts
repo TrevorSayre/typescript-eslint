@@ -323,7 +323,7 @@ async function main(): Promise<void> {
 
   await writeExtendedConfig({
     description:
-      'Enables each the rules provided as a part of typescript-eslint. Note that many rules are not applicable in all codebases, or are meant to be configured.',
+      'Enables each of the rules provided as a part of typescript-eslint. Note that many rules are either not applicable in all codebases or are meant to be configured.',
     name: 'all',
     settings: {
       deprecated: 'exclude',
@@ -344,7 +344,7 @@ async function main(): Promise<void> {
 
   await writeExtendedConfig({
     description:
-      'Contains all of `recommended` along with additional recommended rules that require type information.',
+      'Contains all of `recommended` and additional recommended rules that require type information.',
     name: 'recommended-type-checked',
     ruleEntries: filterRuleEntriesTo('recommended'),
     settings: {
@@ -354,7 +354,7 @@ async function main(): Promise<void> {
 
   await writeExtendedConfig({
     description:
-      'A version of `recommended` that only contains type-checked rules and disables of any corresponding core ESLint rules.',
+      'A version of `recommended` that only contains type-checked rules and disables any corresponding core ESLint rules.',
     settings: {
       getOptions: createGetOptionsForLevel('recommended'),
       typeChecked: 'include-only',
@@ -365,7 +365,7 @@ async function main(): Promise<void> {
 
   await writeExtendedConfig({
     description:
-      'Contains all of `recommended`, as well as additional strict rules that can also catch bugs. ',
+      'Contains all of `recommended` and additional strict rules that can also catch bugs. ',
     settings: {
       getOptions: createGetOptionsForLevel('strict'),
       typeChecked: 'exclude',
@@ -376,7 +376,7 @@ async function main(): Promise<void> {
 
   await writeExtendedConfig({
     description:
-      'Contains all of `recommended`, `recommended-type-checked`, and `strict`, along with additional strict rules that require type information.',
+      'Contains all of `recommended`, `recommended-type-checked`, `strict`, and additional strict rules that require type information.',
     settings: {
       getOptions: createGetOptionsForLevel('strict'),
     },
@@ -386,7 +386,7 @@ async function main(): Promise<void> {
 
   await writeExtendedConfig({
     description:
-      'A version of `strict` that only contains type-checked rules and disables of any corresponding core ESLint rules.',
+      'A version of `strict` that only contains type-checked rules and disables any corresponding core ESLint rules.',
     settings: {
       getOptions: createGetOptionsForLevel('strict'),
       typeChecked: 'include-only',
@@ -397,7 +397,7 @@ async function main(): Promise<void> {
 
   await writeExtendedConfig({
     description:
-      'Rules considered to be best practice for modern TypeScript codebases, but that do not impact program logic.',
+      'Rules considered to be best practice for modern TypeScript codebases, but that do not impact logic.',
     settings: {
       typeChecked: 'exclude',
     },
@@ -407,14 +407,14 @@ async function main(): Promise<void> {
 
   await writeExtendedConfig({
     description:
-      'Contains all of `stylistic`, along with additional stylistic rules that require type information.',
+      'Contains all of `stylistic` and additional stylistic rules that require type information.',
     name: 'stylistic-type-checked',
     ruleEntries: filterRuleEntriesTo('stylistic'),
   });
 
   await writeExtendedConfig({
     description:
-      'A version of `stylistic` that only contains type-checked rules and disables of any corresponding core ESLint rules.',
+      'A version of `stylistic` that only contains type-checked rules and disables any corresponding core ESLint rules.',
     settings: {
       typeChecked: 'include-only',
     },
@@ -424,7 +424,7 @@ async function main(): Promise<void> {
 
   await writeConfig({
     description:
-      'A utility ruleset that will disable type-aware linting and all type-aware rules available in our project.',
+      'A utility ruleset that will disable type-aware linting and all type-aware rules available in a project.',
     getConfig: () => ({
       parserOptions: {
         project: false,

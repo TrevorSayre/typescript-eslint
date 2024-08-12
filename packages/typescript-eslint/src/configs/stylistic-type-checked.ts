@@ -11,7 +11,7 @@ import baseConfig from './base';
 import eslintRecommendedConfig from './eslint-recommended';
 
 /**
- * Contains all of `stylistic`, along with additional stylistic rules that require type information.
+ * Contains all of `stylistic` and additional stylistic rules that require type information.
  * @see {@link https://typescript-eslint.io/users/configs#stylistic-type-checked}
  */
 export default (

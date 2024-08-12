@@ -11,7 +11,7 @@ import baseConfig from './base';
 import eslintRecommendedConfig from './eslint-recommended';
 
 /**
- * Contains all of `recommended` along with additional recommended rules that require type information.
+ * Contains all of `recommended` and additional recommended rules that require type information.
  * @see {@link https://typescript-eslint.io/users/configs#recommended-type-checked}
  */
 export default (
